@@ -1,7 +1,19 @@
 #!/bin/bash
-# Install Nginx if it's not already there
-yum update -y
-amazon-linux-extras install nginx1 -y
 
-# Clean out the deployment directory
-rm -rf /usr/share/nginx/html/*
+# Update package list
+sudo apt update -y
+
+# Install Nginx if not already installed
+if ! command -v nginx &> /dev/null
+then
+    echo "Installing Nginx..."
+    sudo apt install -y nginx
+else
+    echo "Nginx is already installed."
+fi
+
+# Enable and start Nginx
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+echo "Nginx installation completed."
