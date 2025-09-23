@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaval Bhalgamadiya - Cloud & DevOps</title>
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
+    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap)" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .skill-tag {
+            transition: all 0.2s ease-in-out;
+        }
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .project-card {
+            transition: all 0.3s ease-in-out;
+            border: 1px solid transparent;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #0ea5e9; /* sky-500 */
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 4px solid #0ea5e9; /* sky-500 */
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-slate-800">
+                <a href="#">Dhaval Bhalgamadiya</a>
+            </div>
+            <div class="hidden md:flex space-x-6 text-lg">
+                <a href="#about" class="hover:text-sky-500 transition-colors">About</a>
+                <a href="#skills" class="hover:text-sky-500 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-sky-500 transition-colors">Projects</a>
+                <a href="#education" class="hover:text-sky-500 transition-colors">Education</a>
+                <a href="#contact" class="hover:text-sky-500 transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 hover:text-sky-500">About</a>
+            <a href="#skills" class="block py-2 hover:text-sky-500">Skills</a>
+            <a href="#projects" class="block py-2 hover:text-sky-500">Projects</a>
+            <a href="#education" class="block py-2 hover:text-sky-500">Education</a>
+            <a href="#contact" class="block py-2 hover:text-sky-500">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="about" class="text-center py-20">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-800">Dhaval Bhalgamadiya</h1>
+            <p class="mt-4 text-xl md:text-2xl text-sky-600">Cloud & DevOps Enthusiast</p>
+            <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                Motivated and AWS Certified Cloud Practitioner with strong foundational knowledge in cloud computing, DevOps practices, and infrastructure automation. Ready to contribute fresh perspectives and quickly adapt in a dynamic, cloud-driven environment.
+            </p>
+            <div class="mt-8 flex justify-center space-x-6 text-3xl text-slate-600">
+                <a href="[https://github.com/Dhaval-04](https://github.com/Dhaval-04)" target="_blank" class="hover:text-sky-500 transition-colors"><i class="fab fa-github"></i></a>
+                <a href="[https://github.com/Dbb04](https://github.com/Dbb04)" target="_blank" class="hover:text-sky-500 transition-colors"><i class="fab fa-github-alt"></i></a>
+                <a href="mailto:dhavalbhalgamadiya4@gmail.com" class="hover:text-sky-500 transition-colors"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <h2 class="text-4xl font-bold text-center text-slate-800 mb-12">Technical Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="skill-tag bg-sky-100 text-sky-800 text-lg font-medium px-4 py-2 rounded-full">AWS (EC2, S3, VPC, Lambda)</span>
+                <span class="skill-tag bg-slate-200 text-slate-800 text-lg font-medium px-4 py-2 rounded-full">Git & GitHub</span>
+                <span class="skill-tag bg-slate-200 text-slate-800 text-lg font-medium px-4 py-2 rounded-full">Docker</span>
+                <span class="skill-tag bg-slate-200 text-slate-800 text-lg font-medium px-4 py-2 rounded-full">Kubernetes</span>
+                <span class="skill-tag bg-green-100 text-green-800 text-lg font-medium px-4 py-2 rounded-full">Terraform</span>
+                <span class="skill-tag bg-slate-200 text-slate-800 text-lg font-medium px-4 py-2 rounded-full">CI/CD (GitHub Actions, ArgoCD)</span>
+                <span class="skill-tag bg-slate-200 text-slate-800 text-lg font-medium px-4 py-2 rounded-full">Linux (Bash)</span>
+                <span class="skill-tag bg-slate-200 text-slate-800 text-lg font-medium px-4 py-2 rounded-full">Python</span>
+                <span class="skill-tag bg-yellow-100 text-yellow-800 text-lg font-medium px-4 py-2 rounded-full">Prometheus & Grafana</span>
+                <span class="skill-tag bg-slate-200 text-slate-800 text-lg font-medium px-4 py-2 rounded-full">Networking (OSI, TCP/IP)</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-slate-100 -mx-6 px-6">
+            <h2 class="text-4xl font-bold text-center text-slate-800 mb-12">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-slate-800">Production Ready EKS Cluster</h3>
+                    <div class="flex flex-wrap gap-2 my-4">
+                        <span class="text-sm bg-green-100 text-green-800 px-3 py-1 rounded-full">Terraform</span>
+                        <span class="text-sm bg-sky-100 text-sky-800 px-3 py-1 rounded-full">AWS</span>
+                        <span class="text-sm bg-slate-200 text-slate-800 px-3 py-1 rounded-full">EKS</span>
+                    </div>
+                    <ul class="space-y-2 text-slate-600 list-disc list-inside">
+                        <li>Architected and deployed a highly available production-grade EKS cluster using Terraform.</li>
+                        <li>Engineered a secure networking foundation with a custom VPC, private subnets, and a NAT Gateway.</li>
+                        <li>Optimized cost and performance using a mix of on-demand and spot EC2 instances.</li>
+                        <li>Automated remote state management using S3 backend with DynamoDB state locking.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-slate-800">CI/CD for a Go Web Application</h3>
+                     <div class="flex flex-wrap gap-2 my-4">
+                        <span class="text-sm bg-slate-200 text-slate-800 px-3 py-1 rounded-full">Docker</span>
+                        <span class="text-sm bg-slate-200 text-slate-800 px-3 py-1 rounded-full">Kubernetes</span>
+                        <span class="text-sm bg-slate-200 text-slate-800 px-3 py-1 rounded-full">GitHub Actions</span>
+                        <span class="text-sm bg-slate-200 text-slate-800 px-3 py-1 rounded-full">ArgoCD</span>
+                    </div>
+                    <ul class="space-y-2 text-slate-600 list-disc list-inside">
+                        <li>Containerized a Go application using Docker for consistent, portable deployments.</li>
+                        <li>Managed deployments on AWS EKS using Helm charts for streamlined configuration.</li>
+                        <li>Architected and implemented a complete CI/CD pipeline using GitHub Actions and Argo CD.</li>
+                        <li>Automated the build, test, and deployment processes for the web application.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="py-20">
+            <h2 class="text-4xl font-bold text-center text-slate-800 mb-16">Education & Certifications</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    
+                    <!-- CVM University -->
+                    <div class="timeline-item mb-12">
+                        <p class="text-sm text-slate-500">July 2021 - July 2025</p>
+                        <h3 class="text-2xl font-bold text-slate-800">B.E in Information Technology</h3>
+                        <p class="text-lg text-slate-600">CVM University, Vallabh Vidhyanagar, Gujarat</p>
+                        <p class="mt-1 text-slate-500">CGPA: 7.92</p>
+                    </div>
+
+                     <!-- AWS Certification -->
+                    <div class="timeline-item mb-12">
+                        <p class="text-sm text-slate-500">July 2025</p>
+                        <h3 class="text-2xl font-bold text-slate-800">AWS Certified Cloud Practitioner</h3>
+                        <p class="text-lg text-slate-600">Amazon Web Services</p>
+                    </div>
+
+                    <!-- KodeKloud Certification -->
+                    <div class="timeline-item mb-12">
+                        <p class="text-sm text-slate-500">June 2025</p>
+                        <h3 class="text-2xl font-bold text-slate-800">Git for Beginners</h3>
+                        <p class="text-lg text-slate-600">KodeKloud</p>
+                    </div>
+
+                    <!-- Swastik School -->
+                    <div class="timeline-item mb-12">
+                        <p class="text-sm text-slate-500">May 2021</p>
+                        <h3 class="text-2xl font-bold text-slate-800">Standard-12, Science</h3>
+                        <p class="text-lg text-slate-600">Swastik School Of science, Rajkot, Gujarat</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-slate-800 text-white -mx-6 px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold">Get In Touch</h2>
+                <p class="mt-4 text-lg text-slate-300">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!</p>
+                <a href="mailto:dhavalbhalgamadiya4@gmail.com" class="mt-8 inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors">
+                    Say Hello
+                </a>
+                 <div class="mt-8 flex justify-center space-x-6 text-3xl">
+                    <a href="[https://github.com/Dhaval-04](https://github.com/Dhaval-04)" target="_blank" class="hover:text-sky-400 transition-colors"><i class="fab fa-github"></i></a>
+                    <a href="[https://github.com/Dbb04](https://github.com/Dbb04)" target="_blank" class="hover:text-sky-400 transition-colors"><i class="fab fa-github-alt"></i></a>
+                    <a href="mailto:dhavalbhalgamadiya4@gmail.com" class="hover:text-sky-400 transition-colors"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 bg-white">
+        <p class="text-slate-600">&copy; 2025 Dhaval Bhalgamadiya. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
