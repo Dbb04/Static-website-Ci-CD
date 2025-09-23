@@ -1,9 +1,16 @@
-version: 0.2
-phases:
-  build:
-    commands:
-      - echo Build started on `date`
-      - echo Zipping all files for deployment
-artifacts:
-  files:
-    - '**/*'
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /var/www/html/
+
+hooks:
+  BeforeInstall:
+    - location: scripts/install_nginx.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_application.sh
+      timeout: 300
+      runas: root
