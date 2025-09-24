@@ -5,6 +5,6 @@ phases:
       - echo "Build started on `date`"
 artifacts:
   files:
-    # This wildcard tells CodeBuild to grab ALL files from your
-    # repository and put them in the final .zip artifact.
+    # This tells CodeBuild to take all files from the repository
+    # and put them in the final .zip artifact.
     - '**/*'
